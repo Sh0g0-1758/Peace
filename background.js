@@ -188,8 +188,6 @@ function check (tab) {
     });
 
     creating.then(onCreated, onError);
-        const response = chrome.tabs.sendMessage(tab.id, {status: "ban"});
-        console.log(response);
 }
 
 function helpstart (tab,e) {
@@ -302,10 +300,6 @@ chrome.tabs.onRemoved.addListener((tabId,removeInfo) => {
   for(let i = 0; i < used_websites.length;i++) {
     let e = used_websites[i];
     if(e.curtabId === tabId) {
-      if(the_total_page_is_uploaded === true) {
-        check(tab);
-        break;
-      }
       helpend(e);
     }
   }
