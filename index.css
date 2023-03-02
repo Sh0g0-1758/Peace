@@ -1,0 +1,12 @@
+body {
+    background-color: #6ec05d;
+    color: white;
+    font-size: 28px;
+    font-family: "avenir-light", "Avenir", "Segoe UI", "Trebuchet MS", "Arial";
+    letter-spacing: 2px;
+}
+
+.centered {
+    margin-top: 80px;
+    text-align: center;
+}

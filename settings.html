@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settings</title>
+    <script src="jquerylocal.js"></script>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="look">
+            <h1>🕊️ Peace settings</h1>
+            </div>
+        </div>
+        <div class="add">
+            <div class="content_add">
+                <h4>Add a Website</h4>
+                <h6>Add a new website to the list of blocked websites below</h6>
+            </div>
+            <div class="enter">
+                <input type="text" id="web_name">
+                <button id="web_press">Add website</button>
+            </div>
+        </div>
+        <div class="website">
+            <div class="content_website">
+                <h4>Daily website limits</h4>
+                <h6>Enter your time limit for these sites</h6>
+            </div>
+            <div class="confirm_web">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+        <div class="total_limit">
+            <h4>Bind a total limit</h4>
+            <h6>Bind a limit on the total time you spend on these sites</h6>
+            <input value="60" type="number" id="total" min="0" max="120">
+            <button id="set_total">Set Total Time</button>
+            <p>P.S. we recommend setting it to 60 minutes 😉</p>
+        </div>
+    </div>
+    <script src="settings.js"></script>
+</body>
+</html>

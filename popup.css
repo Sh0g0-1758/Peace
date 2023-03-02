@@ -1,0 +1,35 @@
+body {
+    background-color: #ffffff;
+    color: #6ec05d;
+    margin: 0px;
+    font-family: "avenir-light", "Avenir", "Segoe UI", "Trebuchet MS", "Arial";
+}
+
+.title {
+    border-bottom: 1px #808080 solid;
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    color: #6ec05d;
+}
+
+#disable, #settings {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    color: #6ec05d;
+    background-color: #ffffff;
+}
+
+#disable:hover {
+    background-color: #6ec05d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#settings:hover {
+    background-color: #6ec05d;
+    color: #ffffff;
+    cursor: pointer;
+}

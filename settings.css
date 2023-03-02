@@ -1,0 +1,201 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-size: 100%;
+}
+
+body {
+    font-family: "avenir-light", sans-serif;
+    color: #808184;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.header {
+    background-color: #6ec05d;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.look {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add {
+    border-bottom: 1px solid #6ec05d;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content_add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color: #6ec05d; */
+}
+
+.content_add h4 {
+    color: #6ec05d;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.content_add h6 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+
+.enter {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+}
+
+#web_name {
+    padding: 6px 10px 6px 10px;
+    border-radius: 1px;
+    border: 2px #6ec05d solid;
+    font-family: "avenir-light", "Avenir", "Segoe UI", "Trebuchet MS", "Arial";
+    margin-right: 20px;
+}
+
+#web_press {
+    background: #6ec05d;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border-width: 0px;
+    padding: 8px 10px 8px 10px;
+    border-color: #6ec05d;
+    transition: background-color 300ms ease-out;
+    border: 2px #6ec05d solid;
+    font-family: "avenir-light", "Avenir", "Segoe UI", "Trebuchet MS", "Arial";
+}
+
+#web_press:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #6ec05d;
+}
+
+.website {
+    border-bottom: 1px solid #6ec05d;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.content_website {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color: #6ec05d; */
+}
+
+.content_website h4 {
+    color: #6ec05d;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.content_website h6 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+
+
+
+
+.total_limit {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+    text-align: center;
+}
+
+#total {
+    padding: 6px 10px 6px 10px;
+    border-radius: 1px;
+    border: 2px #6ec05d solid;
+    font-family: "avenir-light", "Avenir", "Segoe UI", "Trebuchet MS", "Arial";
+    margin-right: 20px;
+}
+
+#set_total {
+    background: #6ec05d;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border-width: 0px;
+    padding: 8px 10px 8px 10px;
+    border-color: #6ec05d;
+    transition: background-color 300ms ease-out;
+    border: 2px #6ec05d solid;
+    font-family: "avenir-light", "Avenir", "Segoe UI", "Trebuchet MS", "Arial";
+}
+
+#set_total:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #6ec05d;
+}
+
+
+.total_limit h4 {
+    color: #6ec05d;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.total_limit h6 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+
+.row {
+    text-align: center;
+}
+
+.limit_input {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 50px;
+    height: 24px;
+    margin-top: 3px;
+    background-color: white;
+    border: 2px #6ec05d solid;
+    border-radius: 5px;
+    margin-left: 80px;
+}

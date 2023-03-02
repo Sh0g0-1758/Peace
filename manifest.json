@@ -1,0 +1,27 @@
+{
+    "name": "Peace",
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "keeps a track of the time spent on social media sites",
+    "permissions": ["tabs", "scripting","notifications","contextMenus","alarms", "storage"],
+    "action": {
+      "default_title": "helps you avoid distractions",
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],
+    "content_scripts": [
+      {
+        "js": ["content.js"],
+        "matches": [
+          "https://*/*",
+          "http://*/*"
+        ]
+      }
+    ]
+  }
