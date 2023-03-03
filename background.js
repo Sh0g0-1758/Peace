@@ -66,7 +66,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     sendResponse({ok : "fine then"})
     work = false;
     chrome.storage.local.set({ key : false},() => {
-      console.log("enabled!");
+      console.log("disabled!");
     });
   } else if (request.addweb === true) {
     sendResponse({ok: "recieved"});
@@ -232,6 +232,7 @@ creating.then(onCreated, onError);
 }
 
 chrome.tabs.onActivated.addListener ((tabId,windowId) => {
+  if(work)
   chrome.tabs.query({active: true, lastFocusedWindow: true}, (tabs) => {
     let tab = tabs[0];
     console.log(tab.url);
@@ -255,6 +256,7 @@ chrome.tabs.onActivated.addListener ((tabId,windowId) => {
 })
 
 chrome.tabs.onCreated.addListener((tab) => {
+  if(work)
   if (tab.status === "complete") {
     for(let i = 0; i < used_websites.length;i++) {
       let e = used_websites[i];
@@ -276,6 +278,7 @@ chrome.tabs.onCreated.addListener((tab) => {
 })
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if(work)
   if (changeInfo.status == "complete") {
     for(let i = 0; i < used_websites.length;i++) {
       let e = used_websites[i];
@@ -297,6 +300,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 });
 
 chrome.tabs.onRemoved.addListener((tabId,removeInfo) => {
+  if(work)
   for(let i = 0; i < used_websites.length;i++) {
     let e = used_websites[i];
     if(e.curtabId === tabId) {

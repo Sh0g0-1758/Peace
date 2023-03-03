@@ -21,14 +21,12 @@ ability.addEventListener("click", () => {
         chrome.runtime.sendMessage({status : false}, (response) => {
             console.log(response.ok);
         })
-        check = false;
     } else {
         head.innerHTML = "Peace is enabled";
         ability.innerHTML = "disable Peace";
         chrome.runtime.sendMessage({status : true}, (response) => {
             console.log(response.ok);
         })
-        check = true;
     }
 })
 
